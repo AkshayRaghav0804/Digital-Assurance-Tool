@@ -11,7 +11,7 @@ selected_source = st.sidebar.radio("Choose a source:", [
 ])
 
 # Logo Path
-logo_path = "D:\\OneDrive - KKC & ASSOCIATES LLP\\Akshay\\python\\ITGC\\logo\\kkc logo.png"  # Ensure your logo is placed at the specified location
+logo_path = "logo/kkc logo.png"  # Ensure your logo is placed at the specified location
 
 # Left-aligned logo, title, and subheader
 st.image(logo_path, width=500)  # Logo with normal size
