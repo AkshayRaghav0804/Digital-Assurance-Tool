@@ -10,8 +10,12 @@ selected_source = st.sidebar.radio("Choose a source:", [
     "GST", "EDPMS/IDPMS", "TRACES / Form 26A", "Income Tax", "EPF"
 ])
 
-# Right Section - Title and Subheader
-st.title("📊 Digital Assurance Tool")
+# Logo Path
+logo_path = "D:\\OneDrive - KKC & ASSOCIATES LLP\\Akshay\\python\\ITGC\\logo\\kkc logo.png"  # Ensure your logo is placed at the specified location
+
+# Left-aligned logo, title, and subheader
+st.image(logo_path, width=500)  # Logo with normal size
+st.title("Digital Assurance Tool")
 st.subheader("Statement containing compliance of conditions of Regulation 33 of LODR Regulations, 2015")
 
 # Table Data
