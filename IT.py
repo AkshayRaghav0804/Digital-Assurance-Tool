@@ -17,7 +17,7 @@ st.subheader("Statement containing compliance of conditions of Regulation 33 of 
 # Table Data
 data = {
     "External Regulatory Information Source": [
-        "[GST Portal](https://gst-extraction.streamlit.app/)", "[TRACES Portal](https://challan-data-extraction-tool-jr9by5jhfixgwlw8ftexpr.streamlit.app/)", "TRACES Portal", "EDPMS/IDPMS Report", "EDPMS/IDPMS Report"
+        "[GST Portal](https://gst-extraction.streamlit.app/)", "[TRACES Portal](https://tdsrecotool-8ev5hcapsychjewmbncbxs.streamlit.app/)", "TRACES Portal", "EDPMS/IDPMS Report", "EDPMS/IDPMS Report"
     ],
     "Description": [
         "Revenue from operations (Goods and Services)",
