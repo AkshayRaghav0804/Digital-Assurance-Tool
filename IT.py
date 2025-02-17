@@ -1,5 +1,7 @@
 import streamlit as st
 import pandas as pd
+import os
+from pathlib import Path
 
 # Streamlit UI Layout
 st.set_page_config(page_title='Digital Assurance Tool', layout='wide')
@@ -10,15 +12,22 @@ selected_source = st.sidebar.radio("Choose a source:", [
     "GST", "EDPMS/IDPMS", "TRACES / Form 26A", "Income Tax", "EPF"
 ])
 
-# Logo Path - Ensure it is stored in the working directory for better accessibility
-logo_path = logo / "kkc logo.png"  # Update the path if needed
+# ✅ Correct Logo Path Handling
+local_logo_path = Path("logo") / "kkc logo.png"  # Correct syntax using pathlib
 
-# Left-aligned logo, title, and subheader
-st.image(logo_path, width=500)  # Set appropriate width for normal size
+# Display the logo (handle both local and hosted cases)
+if local_logo_path.exists():
+    st.image(str(local_logo_path), width=500)  # ✅ Works locally
+else:
+    # ✅ Use GitHub raw URL when hosting on Streamlit Cloud (replace with your actual repo details)
+    logo_url = "https://raw.githubusercontent.com/your-username/your-repo/main/logo/kkc%20logo.png"
+    st.image(logo_url, width=500)
+
+# Title and Subheader
 st.title("Digital Assurance Tool")
 st.subheader("Statement containing compliance of conditions of Regulation 33 of LODR Regulations, 2015")
 
-# Table Data
+# ✅ Table Data
 data = {
     "External Regulatory Information Source": [
         "[GST Portal](https://gst-extraction.streamlit.app/)", 
@@ -60,7 +69,7 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-# Display Table with Clickable Links
+# ✅ Display Table with Clickable Links
 st.write("### Table")
 
 def make_clickable(val):
