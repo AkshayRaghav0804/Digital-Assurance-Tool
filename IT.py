@@ -11,7 +11,7 @@ selected_source = st.sidebar.radio("Choose a source:", [
 ])
 
 # Logo Path - Ensure it is stored in the working directory for better accessibility
-logo_path = "https://raw.githubusercontent.com/your-username/your-repo/main/logo/logo.png"  # Update the path if needed
+logo_path = "logo / "kkc logo.png""  # Update the path if needed
 
 # Left-aligned logo, title, and subheader
 st.image(logo_path, width=500)  # Set appropriate width for normal size
