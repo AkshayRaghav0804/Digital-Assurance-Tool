@@ -11,10 +11,10 @@ selected_source = st.sidebar.radio("Choose a source:", [
 ])
 
 # Logo Path - Ensure it is stored in the working directory for better accessibility
-logo_path = "logo/kkc_logo.png"  # Update the path if needed
+logo_path = "D:\OneDrive - KKC & ASSOCIATES LLP\Akshay\python\ITGC\logo\kkc logo.png"  # Update the path if needed
 
 # Left-aligned logo, title, and subheader
-st.image(logo_path, width=250)  # Set appropriate width for normal size
+st.image(logo_path, width=500)  # Set appropriate width for normal size
 st.title("Digital Assurance Tool")
 st.subheader("Statement containing compliance of conditions of Regulation 33 of LODR Regulations, 2015")
 
